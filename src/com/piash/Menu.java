@@ -15,8 +15,9 @@ public class Menu extends Account {
 		int x =1;
 		do {
 			try {
-				data.put(123456, 123);
+				data.put(328911, 123);
 				data.put(212212, 212);
+				data.put(911328, 111);
 				
 				System.out.println("Welcome to  ATM Machine");
 				System.out.print("Enter your Customer Number:");
