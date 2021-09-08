@@ -51,13 +51,13 @@ public class Account {
 		
 		public void getCheckingWithdrawInput() {
 			System.out.println("Checking account Balance"+moneyFormat.format(checkingBalance));
-			System.out.println("Amount you want to withdraw  from checking Account");
+			System.out.println("Total Amount you want to withdraw  from checking Account");
 			double amount = input.nextDouble();
 			if((checkingBalance-amount)>=0) {
 				calcCheckingWithdraw(amount);
 				System.out.println("New checking account balance "+moneyFormat.format(checkingBalance));
 			}else {
-				System.out.println("Balance can not be negative"+"\n");
+				System.out.println("You do not hava sufficient balance"+"\n");
 			}
 		}
 		
@@ -69,7 +69,7 @@ public class Account {
 				calcSavingWithdraw(amount);
 				System.out.println("New Saving account balance"+savingBalance + "\n");
 			}else {
-				System.out.println("Balance can not be nagative"+"\n");
+				System.out.println("You do not have sufficient balance"+"\n");
 			}
 		}
 		public void getCheckingDepositInput() {
@@ -80,7 +80,7 @@ public class Account {
 				calcCheckingDeposit(amount);
 				System.out.println("New checking account balance "+moneyFormat.format(checkingBalance));
 			}else {
-				System.out.println("Balance can not be negative"+"\n");
+				System.out.println("You do not have sufficient balance"+"\n");
 			}
 		}
 		public void getSavingDepositInput() {
@@ -91,7 +91,7 @@ public class Account {
 				calcSavingDeposit(amount);
 				System.out.println("New saving account balance"+moneyFormat.format(savingBalance) + "\n");
 			}else {
-				System.out.println("Balance can not be nagative"+"\n");
+				System.out.println("You do not have sufficient balance"+"\n");
 			}
 		}
 
